@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            border: 2px solid #ccc;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Object Detection with YOLO</h2>
+
+    <!-- Upload Form -->
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit"> Detect</button>
+    </form>
+
+    <!-- Display Result -->
+    {% if image_url %}
+    <h3>Detection Result:</h3>
+    <img src="{{ image_url }}" alt="Detection Result">
+    {% endif %}
+</body>
+</html>

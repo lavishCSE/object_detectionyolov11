@@ -1,0 +1,9 @@
+1- I used YoloV11 model for object detection
+2- Used coco dataset over 100 classes
+3- Train model and store in best.py file 
+4-Make fast Api with html for UI and backend both 
+5- you need to click upload button and upload the image and after click on prediction button
+6- Result show with bounding box in same html page 
+
+
+7- I dont use Docker because i have less knowledge about docker if you want in real application then i must be implemented with docker.
